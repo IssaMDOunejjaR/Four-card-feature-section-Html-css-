@@ -1,0 +1,127 @@
+:root {
+    --p-color: hsl(229, 6%, 66%);
+    --h-color: hsl(234, 12%, 34%);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--h-color);
+}
+
+p {
+    color: var(--p-color);
+}
+
+section {
+    background-color: hsl(0, 0%, 98%);
+    height: 100vh;
+}
+
+section .header h1,
+section .header h2,
+section .header p {
+    text-align: center;
+}
+
+section .header h1,
+section .header h2 {
+    font-size: 45px;
+    margin: 0;
+}
+
+section .header h1 {
+    font-weight: normal;
+}
+
+section .header {
+    min-height: 35%;
+    padding: 100px 20px;
+}
+
+section .header p {
+    width: 32%;
+    margin: 20px auto;
+}
+
+section .features {
+    min-height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .features > div {
+    padding: 20px;
+}
+
+section .features > div:first-child,
+section .features > div:nth-child(2),
+section .features > div:last-child {
+    width: 25%;
+}
+
+section .features > div:first-child .feat-2 {
+    border-top: 5px solid hsl(180, 62%, 55%);
+    border-radius: 7px;
+    box-shadow: 5px 5px 30px #CCC;
+    padding: 30px;
+    width: 100%;
+    min-height: 260px;
+    overflow: hidden;
+}
+
+section .features > div:nth-child(2) > div {
+    border-radius: 7px;
+    box-shadow: 5px 5px 30px #CCC;
+    padding: 30px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 100%;
+    min-height: 260px;
+    overflow: hidden;
+}
+
+section .features > div:nth-child(2) .feat-1 {
+    border-top: 5px solid hsl(0, 78%, 62%);
+}
+
+section .features > div:nth-child(2) .feat-3 {
+    border-top: 5px solid hsl(34, 97%, 64%);
+}
+
+section .features > div:last-child .feat-4 {
+    border-top: 5px solid hsl(212, 86%, 64%);
+    border-radius: 7px;
+    box-shadow: 5px 5px 30px #CCC;
+    padding: 30px;
+    width: 100%;
+    min-height: 260px;
+    overflow: hidden;
+}
+
+section .features > div img {
+    float: right;
+}
+
+@media (max-width: 750px) {
+    section .features {
+        height: 80%;
+        display: block;
+    }
+    section .features > div:first-child,
+    section .features > div:nth-child(2),
+    section .features > div:last-child {
+        width: 100%;
+    }
+}
